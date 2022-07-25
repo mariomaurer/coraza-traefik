@@ -5,7 +5,7 @@ displayName: Coraza WAF
 type: middleware
 
 # The import path of your plugin.
-import: github.com/jptosso/coraza-traefik
+import: github.com/mariomaurer/coraza-traefik
 
 # A brief description of what your plugin is doing.
 summary: Coraza WAF is an enterprise-grade web application firewall built in go.
