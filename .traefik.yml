@@ -20,4 +20,4 @@ experimental:
   plugins:
     coraza-traefik:
       moduleName: "github.com/mariomaurer/coraza-traefik"
-      version: "v1.0.0"
+      version: "v1.1.2"
