@@ -18,6 +18,6 @@ testData:
 
 experimental:
   plugins:
-    example:
+    coraza-traefik:
       moduleName: github.com/mariomaurer/coraza-traefik
-      version: v1.1.5
+      version: v1.1.6
