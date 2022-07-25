@@ -1,4 +1,4 @@
-module github.com/jptosso/coraza-traefik
+module github.com/mariomaurer/coraza-traefik
 
 go 1.16
 
