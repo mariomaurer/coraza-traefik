@@ -5,7 +5,7 @@ displayName: Coraza WAF
 type: middleware
 
 # The import path of your plugin.
-import: github.com/jptosso/coraza-traefik
+import: github.com/mariomaurer/coraza-traefik
 
 # A brief description of what your plugin is doing.
 summary: Coraza WAF is an enterprise-grade web application firewall built in go.
@@ -15,9 +15,6 @@ summary: Coraza WAF is an enterprise-grade web application firewall built in go.
 # and Traefik Pilot will try to execute the plugin with the configuration you provide as part of its startup validity tests.
 testData:
   include: '/etc/coraza/rules.conf'
-  
-testData:
-  ModsecurityUrl: http://waf:80
   
 experimental:
   plugins:
