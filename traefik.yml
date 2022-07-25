@@ -1,12 +1,20 @@
-displayName: Modsecurity Plugin
+# The name of your plugin as displayed in the Traefik Pilot web UI.
+displayName: Coraza WAF
+
+# For now, `middleware` is the only type available.
 type: middleware
 
-import: github.com/acouvreur/traefik-modsecurity-plugin
+# The import path of your plugin.
+import: github.com/jptosso/coraza-traefik
 
-summary: 'Traefik plugin to proxy requests to owasp/modsecurity-crs:apache'
+# A brief description of what your plugin is doing.
+summary: Coraza WAF is an enterprise-grade web application firewall built in go.
 
+# Configuration data for your plugin.
+# This is mandatory,
+# and Traefik Pilot will try to execute the plugin with the configuration you provide as part of its startup validity tests.
+testData:
+  include: '/etc/coraza/rules.conf'
+  
 testData:
   ModsecurityUrl: http://waf:80
-
-iconPath: ./img/icon.png
-bannerPath: ./img/banner.png
