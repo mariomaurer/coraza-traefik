@@ -15,3 +15,9 @@ summary: Coraza WAF is an enterprise-grade web application firewall built in go.
 # and Traefik Pilot will try to execute the plugin with the configuration you provide as part of its startup validity tests.
 testData:
   include: '/etc/coraza/rules.conf'
+  
+experimental:
+  plugins:
+    coraza-traefik:
+      moduleName: "github.com/mariomaurer/coraza-traefik"
+      version: "v1.0.0"
