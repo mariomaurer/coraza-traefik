@@ -18,3 +18,9 @@ testData:
   
 testData:
   ModsecurityUrl: http://waf:80
+  
+experimental:
+  plugins:
+    coraza-traefik:
+      moduleName: "github.com/mariomaurer/coraza-traefik"
+      version: "v1.0.0"
